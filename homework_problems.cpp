@@ -105,8 +105,8 @@ int main()
   cout<< "Area of Circle is " << areaCircle << endl;
   cout<< "Area of Rectangle is " << areaRectangle << endl;
   cout<< "Area of Triangle is " << areaTriangle << endl;
-
 */
+
 // ================================================
 /*
   Level 2: Conditional Statements
@@ -129,7 +129,7 @@ int main()
       print Invalid Marks
 
   3. Exit
-  
+
   // Code: 
 
   int marks;
@@ -161,7 +161,7 @@ int main()
     cout<< "Invalid Marks";
   }
 
-*/
+  */
 // ================================================
 /*
   Task 2: Number Classification (positive/negative, even/odd & prime/non-prime)
@@ -197,6 +197,7 @@ int main()
     cout<< "Negative";
   }
 
+  cout<<endl;
   // even/odd
   if (n % 2 == 0)
   {
@@ -249,7 +250,6 @@ int main()
   2. for(i=1, i<=10, i++)
         print n x i = n*i
   3. Exit
-
   // Code: 
   int n;
   cout<< "Enter number: ";
@@ -265,6 +265,7 @@ int main()
   }
 
 */
+
 // ================================================
 /*
   Task 2: Pattern Printing
@@ -288,7 +289,6 @@ int main()
   5. Will explain on notepad
   6. Exit
   
-
   // Code:
   int n;
   cout<< "Enter n: ";
@@ -372,6 +372,7 @@ int main()
   }
 
 */
+
 // ================================================
 /*
   Task 2: Sum of Digits (Input a number → find sum of all digits using loop)
@@ -387,6 +388,7 @@ int main()
   
   */
 
+
   // Code:
   int n;
   cout<< "Enter number: ";
@@ -400,6 +402,5 @@ int main()
   }
   
   cout<< "Sum of digit " << n << " is " << sum << endl;
-
 }
 
