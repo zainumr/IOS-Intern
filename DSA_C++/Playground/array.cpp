@@ -328,48 +328,7 @@ for (int val : arr)
 
 // cout<< maxSum << "\n";
 
-// Maximum Subarrays Sum using Kadan's Algorithm
-// vector<int> arr = {3,-4,5,4,-1,7,-8};
-vector<int> arr = {-1,-4,-5,-4,-1,-7,-8};
 
-// int maxSum = INT_MIN;
-//     cout<< maxSum << "\n";
-
-// int currSum = 0;
-
-// for (int val : arr)
-// {
-//     currSum += val;
-//     maxSum = max(currSum, maxSum);
-
-//     // cout<< maxSum << "\n";
-
-//     if (currSum < 0)
-//     {
-//         currSum = 0;
-//     }
-    
-// }
-
-// cout<< maxSum << "\n";
-
-// Minmum Subarrays Sum using Kadan's Algorithm
-int minSum = INT_MAX;
-int currMin = 0;
-
-for (int val : arr)
-{
-    currMin += val;
-    minSum = min(currMin, minSum);
-
-    if (currMin > 0)
-    {
-        currMin = 0;
-    }
-    
-}
-
-cout<< minSum << "\n";
 
 return 0;
 }   
