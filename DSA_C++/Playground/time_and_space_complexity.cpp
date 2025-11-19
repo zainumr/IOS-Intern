@@ -23,10 +23,9 @@ int main()
             Best case complexity = Ω (Omega)
  
         4. Space: Does not means the actual space taken by code
+            NOTE: It is amount of space taken by an algorithm as function of input size(n)
 
-        NOTE: It is amount of space taken by an algorithm as function of input size(n)
-
-        5. Input doesn't take space when we talk about space complexity, Auxiliary(Extra) space is
+        5. When we talk about space complexity Input doesn't take space, Auxiliary(Extra) space is
         counted as space complexity
         
         6. Space Complexity -> Big O(n) becaause of constant space O(k) we ignore constant so O(1)
@@ -35,13 +34,23 @@ int main()
 
         8. O(2^n) Exponential(Bad) Complexity (Brute Force, Recursion)
 
-        9. O(n^2), O(n^3) Average Complexity (Bubble Sort, Selection Sort, Insertion Sort (Average Complexity)
+        9. O(n^2), O(n^3) Not So Good Complexity (Bubble Sort, Selection Sort, Insertion Sort) comparison based algorithm
 
-        10. O(nlog n) Better Complexity (Sorting, Merg Sort, Quick Sort, Greedy Algo)
+        10. O(nlog n) Average Complexity (Sorting, Merg Sort, Quick Sort, Greedy Algo) optimize sorting algorithm
 
-        11. O(n) Good Complexity (Linear Search)
+        11. O(n) Good Complexity (Linear Search) triversing
+            1. N Factorial
+            2. Nth Fibnocci
+            3. Kadan's Algo
 
-        12. O(log n) Very Optimized (Binary Search -> value gets half on next operation)
+        12. O(log n) Very Good (Binary Search -> Efficient search algorithm to find target apply on sorted arrays)
+
+        13. O(1) Very Optimized (no loop, no recursion only solved from mathematical equation)
+
+            1. Sum of numbers from 1 to N
 
     */
+
+    
+ 
 }
