@@ -50,7 +50,4 @@ int main()
             1. Sum of numbers from 1 to N
 
     */
-
-    
- 
 }
