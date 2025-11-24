@@ -96,11 +96,17 @@ int main()
     // cout<< *sptr << '\n';
 
     int arr2[] = {1,2,3,4,5}; 
-    cout<< *arr << '\n';
-    cout<< *arr+1 << '\n';
-    cout<< *arr+2 << '\n';
-    cout<< *arr+3 << '\n';
-    cout<< *arr+4 << '\n';
+    // cout<< *arr << '\n';
+    // cout<< *arr+1 << '\n';
+    // cout<< *arr+2 << '\n';
+    // cout<< *arr+3 << '\n';
+    // cout<< *arr+4 << '\n';
+
+    // Note: we can't perform addition operations with pointers
+    // can subtract 2 pointers if type are same
+    
+
+
 
 
 
