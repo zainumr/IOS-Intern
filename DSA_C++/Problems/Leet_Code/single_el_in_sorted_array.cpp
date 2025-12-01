@@ -23,11 +23,11 @@ int singleEl(vector<int> nums)
 
         if (mid%2 == 0) // even
         {
-           if (nums[mid-1] == nums[mid])
+           if (nums[mid-1] == nums[mid]) // left
            {
                 end = mid-1;
            }
-           else
+           else // right
            {
                 st = mid+1;
            }
@@ -35,11 +35,11 @@ int singleEl(vector<int> nums)
         }
         else // odd
         {
-            if (nums[mid-1] == nums[mid])
+            if (nums[mid-1] == nums[mid]) // right
            {
                 st = mid+1;
            }
-           else
+           else // left
            {
                 end = mid-1;
            }
