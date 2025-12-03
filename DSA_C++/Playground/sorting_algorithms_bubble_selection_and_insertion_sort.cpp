@@ -29,7 +29,7 @@ void selectionSort(int arr[], int n)
 {
     for (int i = 0; i < n-1; i++)
     {
-        int smallestIndex = i; // track smallest el from unsorted part
+        int smallestIndex = i; // track smallest el from sorted part (we assume first el is smallest)
 
         for (int j = i+1; j < n; j++)
         {
@@ -39,7 +39,7 @@ void selectionSort(int arr[], int n)
             }
         }
 
-        swap(arr[i], arr[smallestIndex]); // swap curr el on ith index to smallest el on SI index
+        swap(arr[i], arr[smallestIndex]); // swap curr el with smallest el
         
     }
     
@@ -49,9 +49,9 @@ void insertionSort(int arr[], int n)
 {
     for (int i = 1; i < n; i++)
     {
-        int currEl = arr[i], prevIdx = i-1;
+        int currEl = arr[i], prevIdx = i-1; // We want to show second element from the unsorted part of the array 
 
-        while (prevIdx >= 0 && arr[prevIdx] < currEl)
+        while (prevIdx >= 0 && arr[prevIdx] > currEl)
         {
             arr[prevIdx+1] = arr[prevIdx];
             prevIdx--;
@@ -106,13 +106,13 @@ int main()
     int arr[] = {4,1,5,2,3};
     int n = 5;
 
-    bubbleSort(arr, n);
+    // bubbleSort(arr, n);
 
     // ========== Selection Sort ==========
     // selectionSort(arr, n);
     
     // ========== Insertion Sort ==========
-    // insertionSort(arr, n);
+    insertionSort(arr, n);
     printArr(arr, n);
 
 
