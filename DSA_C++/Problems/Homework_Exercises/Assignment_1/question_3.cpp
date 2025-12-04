@@ -24,7 +24,7 @@ int avgFunc(vector<int>* arrPtr)
 int main()
 {
 /*  
-    Question #03
+    ================== Question #03 ==================
     Define an integer pointer array of 10 numbers. Initialize them to any integer values from the key
     board. Find the sum and average of these 10 integers.
 */

@@ -3,7 +3,9 @@ using namespace std;
 
 int main()
 {
-/*  Write a program that calculates sum of array elements where array elements can be accessed
+/*  
+    ================== Question 2 ==================
+    Write a program that calculates sum of array elements where array elements can be accessed
     using a pointer to an array?
 */
     int arr[5] = {1,2,3,4,5};
