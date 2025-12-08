@@ -2,27 +2,24 @@
 #include <vector>
 using namespace std;
 
-void printValX(int x)
+void printVal(int x, int *p, int **pp)
 {
-    int* p = &x;
-    int** pp = &p;
-
     cout<< "x = " << x << '\n';
     cout<< "p = " << *p << '\n';
     cout<< "pp = " << **pp << '\n';
-
 }
 
 void changeValX(int **pp)
 {
     **pp = 100;
+    cout<< "x = " << **pp << '\n';
 }
 
-void incrValY(int y)
+void increaseY(int y)
 {
     int* p = &y;
     *p += 10;
-    cout<< "Y increased" << *p << '\n';
+    cout<< "y = " << *p << '\n';
 }
 
 void swapXY(int x, int y)
@@ -58,19 +55,20 @@ int main()
     int** pp = &p;
 
     // 3
-    printValX(x);
+    printVal(x, p, pp);
 
     // 4
     changeValX(pp);
 
     // 5
-    incrValY(y);
+    increaseY(y);
 
     // 6
     swapXY(x, y);
 
     // 7 
-    cout<< x << " " << y << '\n';
+    cout<< "x = " << x << ", y = " << y << '\n';
+
 
     return 0;
 }

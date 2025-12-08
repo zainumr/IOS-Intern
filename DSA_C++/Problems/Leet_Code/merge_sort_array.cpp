@@ -28,50 +28,6 @@ void mergeSortArr(vector<int> &nums1, vector<int> &nums2, int m, int n)
     
 }
 
-// void mergeSortArr2(vector<int> &nums) // {2,5,6,1,2,3}
-// {
-//     int n = nums.size();
-//     int idx = n-1, l = 0, r = n-1;
-    
-//     // while (l <= r)
-//     // {
-//         int mid = l + (r-l)/2;
-
-//         while (l <= mid)
-//         {
-//             if (nums[l] < nums[mid])
-//             {
-//                 l++;
-//             }
-//             else
-//             {
-//                 // nums[l] = nums[mid];
-//                 // nums[mid] = nums[l];
-//                 swap(nums[l], nums[mid]);
-//                 l++;
-//             }
-//         }
-
-//         while (mid+1 <= r)
-//         {
-//             if (nums[mid+1] < nums[r])
-//             {
-//                 r--;
-//             }
-//             else
-//             {
-//                 // nums[mid+1] = nums[r];
-//                 // nums[r] = nums[mid+1];
-//                 swap(nums[mid+1], nums[r]);
-//                 r--;
-//             }
-//         }
-        
-       
-//     // }
-    
-    
-// }
 
 void printArr(vector<int> nums1)
 {
@@ -94,10 +50,6 @@ int main()
     
     mergeSortArr(nums1, nums2, m, n);
     printArr(nums1);
-    
-    vector<int> nums = {5,6,1,4,3,2};
-    // mergeSortArr2(nums);
-
 
     return 0;
 }

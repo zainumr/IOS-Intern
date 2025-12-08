@@ -13,16 +13,17 @@ int main()
     Output: a = 10, b = 5.
 */
     int a, b;
-    cout<< "Enter a =  ";
-    cin>> a;
-    cout<< "Enter b = ";
-    cin>> b;
+    cout<< "Enter a: ";
+    cin>>a;
+    cout<< "Enter b: ";
+    cin>>b;
 
+    cout<< "a = " << a << " " <<  "b = " << b << '\n';
     int* ptrA = &b;
     int* ptrB = &a;
-
-    cout<< "a = " << *ptrA << '\n';
-    cout<< "b = " << *ptrB << '\n';
+    a = *ptrA;
+    b = *ptrB;
+    cout<< "a = " << a << " " <<  "b = " << b << '\n';
 
     return 0;
 }

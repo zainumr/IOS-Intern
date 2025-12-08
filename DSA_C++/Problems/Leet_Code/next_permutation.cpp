@@ -2,39 +2,58 @@
 #include <vector>
 using namespace std;
 
-void mergeSortArr(vector<int> &nums1, vector<int> &nums2, int m, int n)
+void nextPermutation(vector<int> &nums) // {1,2,3}
 {
-    int idx = m+n-1, i = m-1, j = n-1;
+    int n = nums.size();
+    // find pivot
+    int pivot = -1;
 
-    while (i >= 0 && j >= 0)
+    for (int i = n-2; i >= 0; i--)
     {
-        if (nums1[i] < nums2[j])
+        if (nums[i] < nums[i+1])
         {
-            nums1[idx--] = nums2[j--];
-            
-        } 
-        else // nums1[i] > nums2[j]
-        {
-            nums1[idx--] = nums1[i--];
-            
+            pivot = i;
+            break;
         }
     }
 
-    while (j >= 0)
+    if (pivot == -1)
     {
-        nums1[idx--] = nums2[j--];
-        
+        reverse(nums.begin(), nums.end());
+        return;
     }
+
+    // find next larger number
+    for (int i = n-1; i > pivot; i--)
+    {
+        if (nums[i] > nums[pivot])
+        {
+            swap(nums[i], nums[pivot]);
+            break;
+        }
+    }
+
+    // reverse nums array from pivot+1 to n-1
+    int st = pivot+1, end = n-1;
+
+    while (st <= end)
+    {
+        swap(nums[st++], nums[end--]);
+    }
+    
+    
+    
+    
     
 }
 
-void printArr(vector<int> nums1)
+void printArr(vector<int> nums)
 {
-    int n = nums1.size();
+    int n = nums.size();
 
     for (int i = 0; i < n; i++)
     {
-        cout<< nums1[i] << " ";
+        cout<< nums[i] << " ";
         
     }
     cout<< '\n';
@@ -42,13 +61,10 @@ void printArr(vector<int> nums1)
 
 int main()
 {
-    vector<int> nums1 = {1,2,3,0,0,0};
-    int m = 3;
-    vector<int> nums2 = {2,5,6};
-    int n = 3;
-
-    mergeSortArr(nums1, nums2, m, n);
-    printArr(nums1);
+    vector<int> nums = {1,2,3};
+    
+    nextPermutation(nums);
+    printArr(nums);
 
 
     return 0;

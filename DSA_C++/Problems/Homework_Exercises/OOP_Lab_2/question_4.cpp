@@ -28,21 +28,14 @@ int main()
 
     // 4
     cout<< "num = " << num << '\n';
-    cout<< "*p = " << *p << '\n';
-    cout<< "**p = " << **pp << '\n';
-
-    // cout<< "address of num = " << &num << '\n';
-    // cout<< "pointer p points to num's address = " << p << '\n';
-    // cout<< "address of pointer p = " << &p << '\n';
-    // cout<< "dereference p will points the value of nums = " << *p << '\n';
-    // cout<< '\n';
-    // cout<< "double pp points to p's address = " << pp << '\n';
-    // cout<< "address of double pointer pp = " << &pp << '\n';
-    // cout<< "dereference pp will points the address of nums  = " << *pp << '\n';
-    // cout<< "double dereference pp will points the value of nums  = " << **pp << '\n';
+    cout<< "pointer p = " << *p << '\n';
+    cout<< "double pointer pp = " << **pp << '\n';
 
     // 5
-    **pp = 65;
+    int newVal;
+    cout<< "Enter new value: ";
+    cin>> newVal;
+    **pp = newVal;
     cout<< num << '\n';
 
 
