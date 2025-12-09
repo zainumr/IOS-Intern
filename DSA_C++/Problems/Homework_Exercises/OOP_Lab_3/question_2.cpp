@@ -16,16 +16,29 @@ int main()
     int n;
     cout<< "Enter number: ";
     cin>> n;
-    int userArr[n];
+    vector<int> userArr;
+
+    for (int i = 1; i <= n; i++)
+    {
+        userArr.push_back(i);
+    }
 
     // 2.
-    int *start = userArr;
-    int* end = userArr;
+    int start = 0, end = userArr.size()-1;
 
-    cout<< *start << '\n';
-    
+    // 3
+    while (start <= end)
+    {
+        // 4
+        swap(userArr[start++], userArr[end--]);
+    }
 
-    
+    // 5
+    for (int i = 0; i < userArr.size(); i++)
+    {
+        cout<< userArr[i] << ' ';
+    }
+    cout<< '\n';
     
     return 0;
 }
