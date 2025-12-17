@@ -2,8 +2,6 @@
 #include <vector>
 using namespace std;
 
-int main()
-{
 /*
     ================= Problem 4 =================
     Write a program that:
@@ -11,12 +9,15 @@ int main()
     2. Creates a pointer p to num.
     3. Creates a double pointer pp to p.
     4. Prints:
-    • Value of num using variable
-    • Value of num using single pointer p
-    • Value of num using double pointer pp
+        • Value of num using variable
+        • Value of num using single pointer p
+        • Value of num using double pointer pp
     5. Ask the user to update the value of num using the double pointer only, then print the new
     Value.
 */
+
+int main()
+{
     // 1
     int num = 50;
 

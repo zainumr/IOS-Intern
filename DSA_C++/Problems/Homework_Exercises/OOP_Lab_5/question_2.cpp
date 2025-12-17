@@ -98,9 +98,6 @@ void searchByAuthor(Book book[], int n)
     
 }
 
-
-int main()
-{
 /*
     ================= Problem: Arrays of Structures =================
     Write a C++ program to manage a collection of books.
@@ -110,6 +107,9 @@ int main()
     4. Write another function to search for all books by a given author name entered by the user
     5. Display the most expensive book.
 */
+
+int main()
+{
     // 2
     Book books[10];
 

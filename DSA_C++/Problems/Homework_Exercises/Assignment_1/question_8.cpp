@@ -83,8 +83,6 @@ void printArr(vector<int> arr)
     cout<< '\n';
 }
 
-int main()
-{
 /*  
     ================== Question #08 ==================
     Write functions which will sort an integer array.
@@ -92,6 +90,9 @@ int main()
     • Selection Sort
     • Insertion Sort
 */
+
+int main()
+{
     vector<int> arr = {4,1,5,2,3};
 
     // =========== Bubble Sort ===========

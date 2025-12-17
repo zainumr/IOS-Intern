@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
 /*
     ================= Problem 4: | Dangling Pointer and Memory Leak =================
     1. Dynamically allocate an integer and assign it a value.
@@ -12,6 +10,10 @@ int main()
     4. Fix the program by setting pointer to nullptr after deletion and freeing memory
     correctly.
 */
+
+int main()
+{
+
     // 1
     int* n = new int(5);
 
@@ -29,9 +31,6 @@ int main()
 
     // 4
     n = nullptr;
-
-    
-
 
     return 0;
 }

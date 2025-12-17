@@ -11,12 +11,8 @@ void calculate(int arr[], int sz, int sum, float avg)
     avg = sum/sz;
 
     cout<< "Sum = " << sum << ", Avg = " << avg << '\n';
-
     
 }
-
-int main()
-{
 
 /*
     ================= Problem 3 : Pointers =================
@@ -28,6 +24,10 @@ int main()
     ➢ Call calculate() with proper arguments.
     ➢ Print sum and average.
 */
+
+int main()
+{
+
     int arr[] = {5,10,15,20,25};
     int sz = 5;
     int sum = 0;

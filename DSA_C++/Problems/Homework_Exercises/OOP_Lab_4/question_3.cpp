@@ -13,8 +13,6 @@ void transposed(int** matrix, int rows, int cols)
     }
 }
 
-int main()
-{
 /*
     ================= Problem 3: Dynamic 2D Array =================
     1. Ask the user for the number of rows and columns.
@@ -25,6 +23,9 @@ int main()
     the matrix.
 
 */
+
+int main()
+{
     // 1
     int rows, cols;
     cout<< "Enter Rows & Column: ";

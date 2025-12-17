@@ -64,9 +64,6 @@ void displayAvgPrice(Car carsSpecs[])
     
 }
 
-
-int main()
-{
 /*
     ================= Problem 6: Typedef =================
     Write a C++ program to manage car information using typedef.
@@ -76,6 +73,9 @@ int main()
     4. Write a function to find and display the car with the oldest year
     5. Write a function to calculate and display the average price of all cars
 */
+
+int main()
+{
     // 2
     Car carsSpecs[5];
 

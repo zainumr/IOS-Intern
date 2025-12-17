@@ -2,8 +2,6 @@
 #include <vector>
 using namespace std;
 
-int main()
-{
 /*
     ================= Problem 2 =================
     1. Declare three integer variables x = 100, y = 200, z = 300.
@@ -13,6 +11,10 @@ int main()
     5. Finally, point p to z and print the value.
     6. Print final values of x, y, z from variables (to check updates)
 */
+
+int main()
+{
+
 
     // 1 
     int x = 100;

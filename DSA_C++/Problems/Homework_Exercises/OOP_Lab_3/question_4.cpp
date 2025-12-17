@@ -14,9 +14,6 @@ void findMax(int arr[], int sz)
     cout<< "Max = " << max << '\n';
 }
 
-int main()
-{
-
 /*
     ================= Problem 4 : Pointers =================
     1. Create a function int findMax(int *arr, int size) that uses only pointer arithmetic (no
@@ -25,6 +22,10 @@ int main()
     ➢ Input 8 integers into an array.
     ➢ Call the function and display the maximum.
 */
+
+int main()
+{
+
     int arr[] = {3,9,1,7,2,8,6,5};
     int sz = 8;
 

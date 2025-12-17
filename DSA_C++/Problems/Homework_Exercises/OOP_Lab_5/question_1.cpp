@@ -72,9 +72,6 @@ void facwithGraterExp(const Department& dept)
 
 }
 
-
-int main()
-{
 /*
     ================= Problem 1: Struct within struct =================
     Write a C++ program to manage information about a university department.
@@ -88,6 +85,11 @@ int main()
     5. Write another function to list all faculty members of a department whose experience is more
     than 10 years
 */
+
+
+int main()
+{
+
     Department dept[3];
 
     // 3

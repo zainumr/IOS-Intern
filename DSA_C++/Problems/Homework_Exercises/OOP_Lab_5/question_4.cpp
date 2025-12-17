@@ -55,10 +55,6 @@ void emplyeeRecords(Employee employees[], int n)
     
 }
 
-
-
-int main()
-{
 /*
     ================= Problem 4: Union =================
     Write a C++ program to demonstrate the use of union for employee records.
@@ -75,6 +71,8 @@ int main()
     5. Also print the size of the union and compare it with an equivalent struct
 */
 
+int main()
+{
     // 3
     Employee employees[5];
     int n = 5;

@@ -55,9 +55,6 @@ void highestAvg(Student* students, int n)
     
 }
 
-
-int main()
-{
 /*
     ================= Problem 3: Structures and Pointer Variables =================
     Write a C++ program to manage student records using dynamic memory allocation.
@@ -68,6 +65,8 @@ int main()
     5. Free the dynamically allocated memory after use
 */
 
+int main()
+{
     // 2
     int n;
     cout<< "Enter Number of Student: ";

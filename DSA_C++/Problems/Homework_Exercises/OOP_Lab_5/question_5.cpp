@@ -29,8 +29,6 @@ string getDayName(int day)
     }
 }
 
-int main()
-{
 /*
     ================= Problem 5: Enum =================
     Write a C++ program to use enumeration for weekdays.
@@ -40,6 +38,9 @@ int main()
     4. Calculate and display the day of the week that comes N days later
     5. Handle wrap-around correctly (e.g., if today is Saturday and N = 3, result should be Tuesday)
 */
+
+int main()
+{
     // 2
     int today, daysLater;
 

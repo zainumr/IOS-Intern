@@ -1,9 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-
 /*
     ================= Problem 6 : Merger =================
     • Input 10 integers into an array.
@@ -14,6 +11,10 @@ int main()
     ➢ If the search value is found, replace it with the new value.
     • Print the final array.
 */
+
+int main()
+{
+
     int searchVal, replaceVal;
     cout<< "Enter search number: ";
     cin>> searchVal;

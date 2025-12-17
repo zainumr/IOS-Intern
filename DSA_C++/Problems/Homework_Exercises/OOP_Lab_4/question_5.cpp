@@ -28,8 +28,6 @@ struct Students {
 
 };
 
-int main()
-{
 /*
     ================= Problem =================
     1. Define a structure Student with the following members:
@@ -44,7 +42,10 @@ int main()
     4. Use setData() to assign values.
     5. Display all student details using display().
 */
-    
+  
+
+int main()
+{  
     // 3
     Students s1, s2, s3;
 

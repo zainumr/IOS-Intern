@@ -2,9 +2,6 @@
 #include <vector>
 using namespace std;
 
-int main()
-{
-
 /*
     ================= Problem 2 : Pointers =================
     1. Take n integers from the user into an array.
@@ -13,6 +10,9 @@ int main()
     4. Move the pointers (start++ and end--) until the array is reversed.
     5. Print the reversed array.
 */
+
+int main()
+{
     int n;
     cout<< "Enter number: ";
     cin>> n;

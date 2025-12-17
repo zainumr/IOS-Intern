@@ -31,8 +31,6 @@ void swapXY(int x, int y)
     cout<< "y = " << *ptrY << '\n';
 }
 
-int main()
-{
 /*
     ================= Problem 6 =================
     Write a C++ program that performs the following tasks using functions with pointers and double
@@ -47,6 +45,10 @@ int main()
     7. In the main() function, call all the above functions in sequence and finally print the values
     of x and y
 */
+
+int main()
+{
+
     // 1
     int x = 30, y = 40;
 

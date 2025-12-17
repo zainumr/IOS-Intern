@@ -19,14 +19,15 @@ string checkPrime(int *ptrNum)
     return "true";
 }
 
-int main()
-{
 /*
     ================= Problem 5 =================
-    Write a program for passing pointer to a function primaryCheck() while returns true if number
+    1. Write a program for passing pointer to a function primaryCheck() while returns true if number
     is prime
-    otherwise return false.
+    2. otherwise return false.
 */
+
+int main()
+{
     int num = 2;
     int* ptrNum = &num;
 

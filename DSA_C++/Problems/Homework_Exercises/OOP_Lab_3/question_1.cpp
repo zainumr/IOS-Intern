@@ -2,9 +2,6 @@
 #include <vector>
 using namespace std;
 
-int main()
-{
-
 /*
     ================= Problem 1 : Pointers =================
     Write a program that:
@@ -15,7 +12,10 @@ int main()
     4. Find the sum of all elements
     6. Find the average.
 */
-    // 1
+
+int main()
+{
+  // 1
     int arr[6] = {2,4,6,8,10,12};
 
     // 2

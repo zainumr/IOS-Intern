@@ -15,20 +15,21 @@ bool primaryCheck(int *ptrN)
     
 }
 
-int main()
-{
-
 /*
     ================= Problem 5 : Pointers Function =================
     1. Write a function bool primaryCheck(int *num) that:
-    ➢ Takes a pointer to an integer as parameter.
-    ➢ Checks whether the value pointed by num is a prime number.
-    ➢ Returns true if prime, otherwise false.
+        . Takes a pointer to an integer as parameter.
+        . Checks whether the value pointed by num is a prime number.
+        . Returns true if prime, otherwise false.
     2. In main():
-    Input a number from the user.
-    ➢ Pass its address to the function.
-    ➢ Print "Prime Number" if the function returns true, otherwise "Not Prime Number".
+        . Input a number from the user.
+        . Pass its address to the function.
+        . Print "Prime Number" if the function returns true, otherwise "Not Prime Number".
 */
+
+int main()
+{
+
     int num;
     cout<< "Enter number: ";
     cin>> num;
@@ -43,8 +44,6 @@ int main()
     {
         cout<< "Not Prime Number" << '\n';
     }
-    
-    
-    
+
     return 0;
 }

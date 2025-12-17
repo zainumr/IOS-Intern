@@ -1,9 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-
 /*
     ================= Problem 2: Dynamic 1D Array =================
     1. Ask the user to enter the size of the array.
@@ -12,6 +9,8 @@ int main()
     4. Print all elements, their sum, and the average.
 */
 
+int main()
+{
     // 1
     int n;
     cout<< "Enter size of array: ";

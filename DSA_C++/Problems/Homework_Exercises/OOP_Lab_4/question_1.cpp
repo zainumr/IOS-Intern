@@ -1,9 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-
 /*
     ================= Problem 1 : Dynamic Variables =================
     1. Dynamically allocate an integer variable using new.
@@ -11,6 +8,10 @@ int main()
     3. Print the value and the memory address.
     4. Finally, release the memory using delete.
 */
+
+int main()
+{
+
     // 1
     int* a = new int();
 

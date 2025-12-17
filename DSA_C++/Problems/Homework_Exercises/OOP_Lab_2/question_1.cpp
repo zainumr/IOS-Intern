@@ -2,20 +2,21 @@
 #include <vector>
 using namespace std;
 
-int main()
-{
-
 /*
     ================= Problem 1 =================
     Write a program that:
     1. Declares an integer variable x and initializes it with any value.
     2. Creates a pointer to x.
     3. Prints:
-    • The value of x
-    • The address of x
-    • The value at the pointer (dereferencing)
+        • The value of x
+        • The address of x
+        • The value at the pointer (dereferencing)
     4. Change the value of x using the pointer only, and print the updated value.
 */
+
+int main()
+{
+
     // 1
     int x = 5;
 

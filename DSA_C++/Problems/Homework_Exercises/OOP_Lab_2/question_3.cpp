@@ -2,8 +2,6 @@
 #include <vector>
 using namespace std;
 
-int main()
-{
 /*
     ================= Problem 3 =================
     Write a program that takes two integers from the user and swaps their values using only
@@ -12,6 +10,10 @@ int main()
     Input: a = 5, b = 10
     Output: a = 10, b = 5.
 */
+
+int main()
+{
+
     int a, b;
     cout<< "Enter a: ";
     cin>>a;
