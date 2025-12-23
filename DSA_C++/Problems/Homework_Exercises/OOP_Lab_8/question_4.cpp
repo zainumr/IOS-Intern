@@ -1,6 +1,4 @@
 #include <iostream>
-#include <string>
-#include <stack>
 using namespace std;
 
 class Stack
@@ -20,13 +18,24 @@ public:
     void pop()
     {
         if (isEmpty()) { return; }
-            cout<< "Popping Element: " << arr[top] << '\n';
+            cout<< "Popping element: " << arr[top] << '\n';
+            top--;
     }
 
     int peek()
     {
-        
+        if (isEmpty()) { return -1; }
+            return arr[top];
     }
+
+    int showEl()
+    {
+        if (!isEmpty()) { return -1; }
+            top++;
+            return arr[top];
+    }
+
+   
 
     bool isEmpty() { return top == -1; }
     bool isFull() { return top == 4; }
@@ -57,6 +66,19 @@ public:
 
 int main()
 {
+    Stack s;
+
+    s.push(10);
+    s.push(20);
+    s.push(30);
+
+    cout << "Top element: " << s.peek() << endl;
+    
+    s.pop();
+    s.pop();
+    s.pop();
+
+    cout << "Top element now: " << s.showEl() << endl;
 
 
     return 0;
