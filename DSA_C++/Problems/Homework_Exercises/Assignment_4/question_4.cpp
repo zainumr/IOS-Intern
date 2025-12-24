@@ -75,17 +75,19 @@ public:
         if (symbol == 1)
         {
             player1();
+            nowTurn = false;
         }
         else
         {
             player2();
+            
         }
         
     }
 
 };
 
-bool TicTacToe::nowTurn = false;
+bool TicTacToe::nowTurn = true;
 int TicTacToe::symbol = 0;
 
 /*
