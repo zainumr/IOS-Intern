@@ -5,13 +5,7 @@ using namespace std;
 class TicTacToe
 {
 private:
-    int matrix[3][3];
-    static bool nowTurn;
-    static int symbol;
-    int row1;
-    int col1;
-    int row2;
-    int col2;
+    int board[3][3];
     
 public:
     TicTacToe()
@@ -20,7 +14,7 @@ public:
         {
             for (int j = 0; j < 3; j++)
             {
-                matrix[i][j] = 0;
+                board[i][j] = 0;
             }
         }
         
@@ -32,63 +26,67 @@ public:
         {
             for (int j = 0; j < 3; j++)
             {
-                matrix[i][j] = 0;
-
-                cout<< matrix[i][j] << (j < 2 ?  " | " : " ");
+                cout<< board[i][j] << (j < 2 ?  " | " : " ");
             }
             cout<< '\n';
+
         }
     }
 
-    void playerSymbol()
+    void makeMove(int player)
     {
-        cout<< "Choose symbol - 1(✔️) or 2(❌): ";
-        cin>> symbol;
-    }
+        int row, col;
+        cout<< "Player " << player << " enter row & column: ";
+        cin>> row >> col;
 
-    void player1()
-    {
-        cout<< "--- Player 1 ---\n";
-
-        cout<< "Enter Row: ";
-        cin>> row1;
-
-        cout<< "Enter col: ";
-        cin>> col1;
-    }
-
-    void player2()
-    {
-        cout<< "--- Player 2 ---\n";
-
-        cout<< "Enter Row: ";
-        cin>> row2;
-
-        cout<< "Enter col: ";
-        cin>> col2;
-    }
-
-    
-
-    void inputplayer()
-    {
-        if (symbol == 1)
+        while (row < 0 || row > 2 || col < 0 || col > 2 || board[row][col] != 0)
         {
-            player1();
-            nowTurn = false;
+            cout<< "Invalid move! Try again...\n";
+            cin>> row >> col;
         }
-        else
+
+        board[row][col] = player;
+    }
+
+    bool checkWin(int player)
+    {
+        for (int i = 0; i < 3; i++)
         {
-            player2();
-            
+            if (board[i][0] == player && board[i][1] == player && board[i][2] == player || 
+                board[0][i] == player && board[1][i] == player && board[2][i] == player)
+            {
+                return true;
+            }
         }
+
+        if (board[0][0] == player && board[1][1] == player && board[2][2] == player || 
+            board[0][2] == player && board[1][1] == player && board[2][0] == player)
+        {
+            return true;
+        }
+
+        return false;
         
+    }
+
+    bool checkDraw()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (board[i][j] == 0)
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 
 };
 
-bool TicTacToe::nowTurn = true;
-int TicTacToe::symbol = 0;
 
 /*
     ================= Problem: 4 =================
@@ -111,6 +109,37 @@ int TicTacToe::symbol = 0;
 int main()
 {
     TicTacToe r1;
+    int currPlayer;
+
+    cout<< "--- Round 1 ---\n";
+    cout<< "Choose symbol - 1(✔️) or 2(❌): ";
+    cin>> currPlayer;
+    r1.displayBoard();
+
+    while (true)
+    {
+        r1.makeMove(currPlayer);
+        r1.displayBoard();
+        cout<< "\n";
+
+        if (r1.checkWin(currPlayer))
+        {
+            cout<< "Player " << currPlayer << " Won!\n";
+            r1.displayBoard();
+            break;
+        }
+
+        if (r1.checkDraw())
+        {
+            cout<< "It's a Draw!\n";
+            r1.displayBoard();
+            break;
+        }
+        
+        currPlayer = currPlayer == 1 ? 2 : 1;
+    }
+    
+    
 
     return 0;
 }
